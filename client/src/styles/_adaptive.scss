@@ -52,7 +52,6 @@
   .header_nav
   {
     position: relative;
-    
   }
 
   .header__menu_block
@@ -169,6 +168,20 @@
   }
 
 
+  .sticky 
+  {
+    background: #202020;
+    padding: 10px 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+
 }
 
 
@@ -198,18 +211,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .sticky 
-  {
-    background: #202020;
-    padding: 10px 15px;
-    max-width: 100%;
-    margin: 0 auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
   }
 
 }
