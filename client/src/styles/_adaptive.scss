@@ -17,7 +17,8 @@
   // HEADER
   .header_nav
   {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   // ADVANTAGES
@@ -135,19 +136,7 @@
   {
     display: flex;
     animation: hide_menu_anim forwards .5s;
-  }
-
-  .sticky 
-  {
-    // background: rgba($color: $ligt_grey, $alpha: .3);
-    background: $grey;
-    padding: 5px 10px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-  }
-
-  
+  }  
   
   
   // SERVICES
@@ -210,6 +199,19 @@
     justify-content: center;
     align-items: center;
   }
+
+  .sticky 
+  {
+    background: #202020;
+    padding: 10px 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
 }
 
 
