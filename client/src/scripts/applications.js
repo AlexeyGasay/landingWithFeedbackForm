@@ -50,6 +50,7 @@ async function fetchApplications(e) {
   let applicationsList = document.querySelectorAll(".application");
 
   applicationsList.forEach(element => {
+    
     // Найти в каждой заявке div.email, взять текст и разделить по пробелу
     let email = element.getElementsByClassName("email")[0].textContent.split(" ")[1];
     
@@ -62,7 +63,7 @@ async function fetchApplications(e) {
 
 }
 
-async function deleteApplication(email) {
+async function deleteApplication(email) { 
   const res = await fetch(`https://secret-taiga-20525.herokuapp.com/api/application?email=${email}`, {
     method: "DELETE",
     headers: {
@@ -76,4 +77,5 @@ async function deleteApplication(email) {
 
 }
   
-applicationsInput.addEventListener("input", fetchApplications)
+applicationsInput.addEventListener("input", fetchApplications);
+applicationsInput.addEventListener("click", fetchApplications);
